@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,130 +7,88 @@ body {
     color: #333;
 }
 
-/* header */
-header {
+/* Cabecera */
+.cabecera {
+    border-bottom: 5px solid #007acc; /* Línea turquesa debajo del header */
+}
+
+/* Barra de navegación */
+.barra-navegacion {
+    border-bottom: 2px solid #00aaff; /* Línea turquesa debajo del navbar */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #00aaff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
     background-color: #00aaff;
     color: white;
-    padding: 20px;
-    text-align: center;
 }
 
-/* main */
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* menú */
-.menu {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 0;
-    margin-bottom: 10px;
-    list-style: none;
-}
-
-.menu-izquierda {
-    display: flex;
-    gap: 15px;
-}
-
-.menu-derecha {
-    display: flex;
-    gap: 15px;
-    margin-left: auto;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: white;
-    background-color: #00aaff;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-}
-
-.menu li a:hover {
+.navbar-light .navbar-nav .nav-link:hover {
     background-color: #007acc;
+    color: white;
 }
 
-/* contenido principal */
-.contenido, .extra {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: #6c757d;
 }
 
-/* footer */
-footer {
+.navbar-light .navbar-toggler-icon {
     background-color: #00aaff;
-    color: white;
-    text-align: center;
-    padding: 10px;
 }
 
-/* login */
-.login-page {
+/* Sección principal */
+section {
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 2px solid #00aaff; /* Borde turquesa alrededor de la sección */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+img {
     width: 100%;
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #ffffff; 
-    border: 1px solid #b3cde0; 
-    border-radius: 5px;
-}
-
-.login-page form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.login-page label {
-    font-weight: bold;
-    color: #333;
-}
-
-.login-page input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 1rem;
-}
-
-.login-page button {
-    background-color: #80d4ff; 
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.login-page button:hover {
-    background-color: #00aaff; 
-}
-
-.volver-home {
+    height: auto;
     display: block;
-    text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
-    background-color: #00aaff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-bottom: 2px solid #00aaff; /* Línea turquesa debajo de la imagen */
 }
 
-.volver-home:hover {
-    background-color: #007acc;
+/* Aside */
+aside {
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 2px solid #00aaff; /* Borde turquesa alrededor del aside */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 1rem;
+}
+
+blockquote {
+    border-left: 4px solid #00aaff; /* Borde turquesa a la izquierda */
+    padding: 0.5rem;
+    margin: 0 0 1rem;
+    font-style: italic;
+    background-color: #f9f9f9; /* Fondo claro para los blockquotes */
+}
+
+/* Footer */
+footer {
+    border-top: 5px solid #007acc; /* Línea turquesa arriba del footer */
+}
+
+/* Espaciado general */
+.container {
+    padding: 0 1rem;
+}
+
+@media (min-width: 576px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 4rem;
+    }
 }
